@@ -31,8 +31,8 @@ void BFS(int s, int nodes, vector<state_struct> *dfa, string test,int ends[],int
     int xs[nodes];
     for(int i=0;i<nodes;i++)
         xs[i]=-1;
-    xs[0]=0;
-    tati[0]=-1;
+    xs[start]=0;
+    tati[start]=-1;
     int counting[nodes];
     for(int i=0;i<nodes;i++)
         counting[i]=1;
