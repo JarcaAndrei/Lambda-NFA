@@ -83,7 +83,7 @@ void BFS(int s, int nodes, vector<state_struct> *dfa, string test,int ends[],int
                 {
                     counting[s]--;
                     tati[j.next_state]=s;
-                    xs[j.next_state]=xs[s];
+                    xs[j.next_state]=xs[s]-1;
                     visited[j.next_state] = true;
                     queue.push_back(j.next_state);
                 }
